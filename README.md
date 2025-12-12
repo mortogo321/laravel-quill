@@ -2,9 +2,10 @@
 
 A Laravel package for seamless integration with **Quill 2.x** WYSIWYG editor.
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/mortogo321/laravel-quill.svg)](https://packagist.org/packages/mortogo321/laravel-quill)
-[![Total Downloads](https://img.shields.io/packagist/dt/mortogo321/laravel-quill.svg)](https://packagist.org/packages/mortogo321/laravel-quill)
-[![License](https://img.shields.io/packagist/l/mortogo321/laravel-quill.svg)](https://packagist.org/packages/mortogo321/laravel-quill)
+[![Latest Stable Version](https://poser.pugx.org/mortogo321/laravel-quill/v/stable)](https://packagist.org/packages/mortogo321/laravel-quill)
+[![Total Downloads](https://poser.pugx.org/mortogo321/laravel-quill/downloads)](https://packagist.org/packages/mortogo321/laravel-quill)
+[![License](https://poser.pugx.org/mortogo321/laravel-quill/license)](https://packagist.org/packages/mortogo321/laravel-quill)
+[![PHP Version Require](https://poser.pugx.org/mortogo321/laravel-quill/require/php)](https://packagist.org/packages/mortogo321/laravel-quill)
 
 ## Features
 
