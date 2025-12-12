@@ -1,0 +1,70 @@
+{
+    "name": "mortogo321/laravel-quill",
+    "description": "Laravel package for Quill WYSIWYG editor with full support for Quill 2.x",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "quill",
+        "quill2",
+        "wysiwyg",
+        "editor",
+        "rich-text",
+        "text-editor",
+        "blade-component"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mor",
+            "homepage": "https://github.com/mortogo321"
+        }
+    ],
+    "homepage": "https://github.com/mortogo321/laravel-quill",
+    "support": {
+        "issues": "https://github.com/mortogo321/laravel-quill/issues",
+        "source": "https://github.com/mortogo321/laravel-quill"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/mortogo321"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mortogo321\\LaravelQuill\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mortogo321\\LaravelQuill\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mortogo321\\LaravelQuill\\QuillServiceProvider"
+            ],
+            "aliases": {
+                "Quill": "Mortogo321\\LaravelQuill\\Facades\\Quill"
+            }
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

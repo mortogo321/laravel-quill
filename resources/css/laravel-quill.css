@@ -1,0 +1,289 @@
+/**
+ * Laravel Quill - Custom Styles
+ * @version 1.0.0
+ * @author Mor
+ */
+
+/* Editor Wrapper */
+.quill-editor-wrapper {
+    --quill-editor-height: 300px;
+    --quill-border-color: #ccc;
+    --quill-border-radius: 4px;
+    --quill-focus-color: #0066cc;
+    --quill-toolbar-bg: #f8f9fa;
+    position: relative;
+}
+
+/* Editor Container */
+.quill-editor {
+    min-height: var(--quill-editor-height);
+    background: #fff;
+}
+
+.quill-editor-wrapper .ql-container {
+    font-size: 1rem;
+    font-family: inherit;
+    min-height: var(--quill-editor-height);
+}
+
+/* Snow Theme Customizations */
+.quill-editor-wrapper .ql-toolbar.ql-snow {
+    border: 1px solid var(--quill-border-color);
+    border-radius: var(--quill-border-radius) var(--quill-border-radius) 0 0;
+    background: var(--quill-toolbar-bg);
+}
+
+.quill-editor-wrapper .ql-container.ql-snow {
+    border: 1px solid var(--quill-border-color);
+    border-top: none;
+    border-radius: 0 0 var(--quill-border-radius) var(--quill-border-radius);
+}
+
+/* Focus State */
+.quill-editor-wrapper:focus-within .ql-toolbar.ql-snow {
+    border-color: var(--quill-focus-color);
+}
+
+.quill-editor-wrapper:focus-within .ql-container.ql-snow {
+    border-color: var(--quill-focus-color);
+}
+
+/* Bubble Theme Customizations */
+.quill-editor-wrapper .ql-container.ql-bubble {
+    border: 1px solid var(--quill-border-color);
+    border-radius: var(--quill-border-radius);
+}
+
+.quill-editor-wrapper:focus-within .ql-container.ql-bubble {
+    border-color: var(--quill-focus-color);
+}
+
+/* Content Viewer */
+.quill-content {
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.quill-content h1,
+.quill-content h2,
+.quill-content h3,
+.quill-content h4,
+.quill-content h5,
+.quill-content h6 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.quill-content h1 { font-size: 2em; }
+.quill-content h2 { font-size: 1.5em; }
+.quill-content h3 { font-size: 1.17em; }
+.quill-content h4 { font-size: 1em; }
+.quill-content h5 { font-size: 0.83em; }
+.quill-content h6 { font-size: 0.67em; }
+
+.quill-content p {
+    margin-bottom: 1em;
+}
+
+.quill-content blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 1em;
+    margin: 1em 0;
+    color: #666;
+    font-style: italic;
+}
+
+.quill-content pre {
+    background: #f4f4f4;
+    border-radius: 4px;
+    padding: 1em;
+    overflow-x: auto;
+    font-family: monospace;
+}
+
+.quill-content code {
+    background: #f4f4f4;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+.quill-content pre code {
+    background: none;
+    padding: 0;
+}
+
+.quill-content ul,
+.quill-content ol {
+    padding-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+.quill-content li {
+    margin-bottom: 0.25em;
+}
+
+.quill-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+}
+
+.quill-content a {
+    color: var(--quill-focus-color, #0066cc);
+    text-decoration: underline;
+}
+
+.quill-content a:hover {
+    text-decoration: none;
+}
+
+.quill-content .ql-video {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    margin: 1em 0;
+}
+
+.quill-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.quill-content table td,
+.quill-content table th {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+}
+
+.quill-content table th {
+    background: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Alignment Classes */
+.quill-content .ql-align-center {
+    text-align: center;
+}
+
+.quill-content .ql-align-right {
+    text-align: right;
+}
+
+.quill-content .ql-align-justify {
+    text-align: justify;
+}
+
+/* Direction */
+.quill-content .ql-direction-rtl {
+    direction: rtl;
+    text-align: inherit;
+}
+
+/* Indentation */
+.quill-content .ql-indent-1 { padding-left: 3em; }
+.quill-content .ql-indent-2 { padding-left: 6em; }
+.quill-content .ql-indent-3 { padding-left: 9em; }
+.quill-content .ql-indent-4 { padding-left: 12em; }
+.quill-content .ql-indent-5 { padding-left: 15em; }
+.quill-content .ql-indent-6 { padding-left: 18em; }
+.quill-content .ql-indent-7 { padding-left: 21em; }
+.quill-content .ql-indent-8 { padding-left: 24em; }
+
+/* Size Classes */
+.quill-content .ql-size-small { font-size: 0.75em; }
+.quill-content .ql-size-large { font-size: 1.5em; }
+.quill-content .ql-size-huge { font-size: 2.5em; }
+
+/* Loading State */
+.quill-editor-wrapper.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.quill-editor-wrapper.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin: -12px 0 0 -12px;
+    border: 2px solid #ccc;
+    border-top-color: var(--quill-focus-color);
+    border-radius: 50%;
+    animation: quill-spin 0.8s linear infinite;
+}
+
+@keyframes quill-spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .quill-editor-wrapper {
+        --quill-border-color: #444;
+        --quill-toolbar-bg: #2d2d2d;
+    }
+
+    .quill-editor {
+        background: #1e1e1e;
+        color: #fff;
+    }
+
+    .quill-editor-wrapper .ql-snow .ql-stroke {
+        stroke: #ccc;
+    }
+
+    .quill-editor-wrapper .ql-snow .ql-fill,
+    .quill-editor-wrapper .ql-snow .ql-stroke.ql-fill {
+        fill: #ccc;
+    }
+
+    .quill-editor-wrapper .ql-snow .ql-picker {
+        color: #ccc;
+    }
+
+    .quill-editor-wrapper .ql-snow .ql-picker-options {
+        background: #2d2d2d;
+    }
+
+    .quill-content pre,
+    .quill-content code {
+        background: #2d2d2d;
+    }
+
+    .quill-content blockquote {
+        color: #aaa;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .quill-editor-wrapper .ql-toolbar.ql-snow {
+        padding: 4px;
+    }
+
+    .quill-editor-wrapper .ql-toolbar.ql-snow .ql-formats {
+        margin-right: 8px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .quill-editor-wrapper .ql-toolbar {
+        display: none;
+    }
+
+    .quill-editor-wrapper .ql-container {
+        border: none !important;
+    }
+
+    .quill-content {
+        font-size: 12pt;
+    }
+}
