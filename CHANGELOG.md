@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release
 - Full support for Quill 2.x WYSIWYG editor
+- Laravel 10.x, 11.x, and 12.x support
+- PHP 8.2+ support
 - Blade components for Editor and Viewer
 - Image upload handling with configurable storage
 - Delta to HTML conversion
